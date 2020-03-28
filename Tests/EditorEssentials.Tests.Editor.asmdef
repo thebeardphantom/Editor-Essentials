@@ -3,7 +3,8 @@
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "EditorEssentials.Editor"
+        "EditorEssentials.Editor",
+        "EditorEssentials.Runtime"
     ],
     "includePlatforms": [
         "Editor"
