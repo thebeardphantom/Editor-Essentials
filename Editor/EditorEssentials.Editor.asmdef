@@ -1,0 +1,15 @@
+{
+    "name": "EditorEssentials.Editor",
+    "references": [
+        "GUID:6959a7a5ac7230a4184f93a2cf91aaa9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
