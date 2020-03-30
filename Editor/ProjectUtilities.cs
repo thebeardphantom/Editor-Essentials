@@ -28,7 +28,7 @@ namespace EditorEssentials.Editor
             output.AppendLine("RemoveAllMissingScriptsFromProject Report");
             output.AppendLine("\tPrefabs:");
 
-            var paths = AssetDatabase.FindAssets("t:GameObject")
+            var paths = AssetDatabase.FindAssets("t:Prefab")
                 .Select(AssetDatabase.GUIDToAssetPath);
             foreach (var path in paths)
             {
