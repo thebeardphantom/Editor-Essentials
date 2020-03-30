@@ -228,10 +228,6 @@ namespace EditorEssentials.Tests.Editor
             rootObj = rootObj.transform.root.gameObject;
             _monoBehaviours.Clear();
             rootObj.GetComponentsInChildren(true, _monoBehaviours);
-            if (_monoBehaviours.Any(m => m == null))
-            {
-                session.ReportErr($"Null MB on '{rootObj}'", rootObj);
-            }
 
             _monoBehaviours.RemoveAll(ShouldIgnoreComponent);
             var rootObjScene = rootObj.scene;
