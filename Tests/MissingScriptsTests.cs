@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Tests
+namespace EditorEssentials.Tests.Editor
 {
     public class MissingScriptsTests
     {
@@ -27,7 +27,9 @@ namespace Tests
                         var missingCount = GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(gameObject);
                         if (missingCount > 0)
                         {
-                            session.ReportErr($"{missingCount} scripts on {gameObject.transform.GetPath()}.", obj);
+                            var assetPath = System.IO.Path.GetDirectoryName(path).Replace('\\', '/');
+                            var fullPath = $"{assetPath}/{gameObject.transform.GetPath()}";
+                            session.ReportErr($"{missingCount} scripts on {fullPath}.", obj, false);
                         }
                     }
 

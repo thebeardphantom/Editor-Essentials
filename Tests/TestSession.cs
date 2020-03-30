@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Object = UnityEngine.Object;
 
-namespace Tests
+namespace EditorEssentials.Tests
 {
     public class TestSession : IDisposable
     {

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace EditorEssentials.Editor
 {
-    public static class SceneObjectUtility
+    public static class HierarchyUtility
     {
         #region Fields
 
@@ -24,7 +24,7 @@ namespace EditorEssentials.Editor
             var obj = gameObject.transform;
             while (obj != null)
             {
-                _pathBuilder.Append($"/{obj.name}");
+                _pathBuilder.Insert(0, $"/{obj.name}");
                 obj = obj.parent;
             }
 
