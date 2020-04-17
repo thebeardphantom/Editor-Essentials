@@ -1,7 +1,7 @@
 {
   "name": "com.beardphantom.editoressentials",
   "displayName": "Editor Essentials",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "unity": "2019.3",
   "description": "",
   "keywords": [
@@ -9,9 +9,8 @@
     "Essentials"
   ],
   "category": "Miscellaneous",
-  "src": "Assets/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thebeardphantom/Editor-Essentials.git"
+    "url": "https://github.com/thebeardphantom/Editor-Essentials.git#upm"
   }
 }
